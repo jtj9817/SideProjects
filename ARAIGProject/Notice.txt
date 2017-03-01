@@ -1,0 +1,10 @@
+The milestone project was compiled on Matrix using
+the following options:
+
+clang++ -std=c++11 -o MainProg Main.cpp Project.cpp Task.cpp Stimulation.cpp ARAIGSensors.cpp
+
+Executed with the following commands:
+
+ MainProg StimulationConfig.csv TaskConfiguration.csv SampleProfileConfiguration.csv StudentReport.txt
+ 
+ StudentReport.txt included in this file is proof of the read and write capabilities of the program. Timestamp is included for further verification of integrity.
