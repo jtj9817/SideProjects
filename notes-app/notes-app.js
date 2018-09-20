@@ -1,10 +1,11 @@
-console.log("Starting app...")
-const fs = require('fs');
+console.log("Starting app...");
+const fs = require("fs");
+const notes = require("./notes.js");
+const lodsh = require("lodash");
 //const os = require('os');
-const notes = require('./notes.js')
-const lodsh = require('lodash');
 //var userName = os.userInfo();
 
+//The following code are past exercises
 /*
 console.log("Beginning testing of lodash functions");
 console.log(lodsh.isString("The quick brown fox"));
