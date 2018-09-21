@@ -1,12 +1,36 @@
 console.log("Starting app...");
+console.log("The following commands are available: list, add, view,edit, remove");
+//Requirements
 const fs = require("fs");
 const notes = require("./notes.js");
 const lodsh = require("lodash");
-//const os = require('os');
-//var userName = os.userInfo();
+var command = process.argv[2];
+console.log("Command you entered: ", command);
+if(command === "add"){
+    console.log("You selected to add notes!");
+}
+else if(command === "list"){
+    console.log("You selected to view a list of notes")
+}
+else if(command ==="read"){
+    console.log("You selected to view a particular note");
+}
+else if(command === "edit"){
+    console.log("You selected to edit a note");
+}
+else if(command === "remove"){
+    console.log("You selected to remove a note!");
+}
+else{
+    console.log("Command not recognized");
+}
 
 //The following code are past exercises
 /*
+//const os = require('os');
+//var userName = os.userInfo();
+
+
 console.log("Beginning testing of lodash functions");
 console.log(lodsh.isString("The quick brown fox"));
 console.log(lodsh.isString("Hello world!"));
