@@ -1,28 +1,26 @@
 console.log("Starting app...");
-console.log("The following commands are available: list, add, view,edit, remove");
-//Requirements
 const fs = require("fs");
 const notes = require("./notes.js");
 const lodsh = require("lodash");
-var command = process.argv[2];
-console.log("Command you entered: ", command);
-if(command === "add"){
-    console.log("You selected to add notes!");
-}
-else if(command === "list"){
-    console.log("You selected to view a list of notes")
-}
-else if(command ==="read"){
-    console.log("You selected to view a particular note");
-}
-else if(command === "edit"){
-    console.log("You selected to edit a note");
-}
-else if(command === "remove"){
-    console.log("You selected to remove a note!");
-}
-else{
-    console.log("Command not recognized");
+const yrgs = require("yargs");
+
+var usrCMD = process.argv[2];
+var yrgsCMD = yrgs.argv;
+console.log("Process Args", usrCMD);
+console.log("Yargs cmd:", yrgsCMD);
+console.log("Command Received:", usrCMD);
+if (usrCMD === "add") {
+  console.log("Adding Note");
+  //console.log("Note Title: ", yrgsCMD.title, yrgsCMD.body);
+  notes.addNote(yrgsCMD.title, yrgsCMD.body);
+} else if (usrCMD === "list") {
+  console.log("Listing Notes");
+} else if (usrCMD === "read") {
+  console.log("Reading Notes");
+} else if (usrCMD === "remove") {
+  console.log("Removing Notes");
+} else {
+  console.log("Command not recognized");
 }
 
 //The following code are past exercises
