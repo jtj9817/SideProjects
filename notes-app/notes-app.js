@@ -2,6 +2,26 @@ console.log("Starting app...");
 const fs = require("fs");
 const notes = require("./notes.js");
 const lodsh = require("lodash");
+const yrgs = require("yargs");
+
+var usrCMD = process.argv[2];
+var yrgsCMD = yrgs.argv;
+console.log("Process Args", usrCMD);
+console.log("Yargs cmd:", yrgsCMD);
+console.log("Command Received:", usrCMD);
+if (usrCMD === "add") {
+  console.log("Adding Note");
+  //console.log("Note Title: ", yrgsCMD.title, yrgsCMD.body);
+  notes.addNote(yrgsCMD.title, yrgsCMD.body);
+} else if (usrCMD === "list") {
+  console.log("Listing Notes");
+} else if (usrCMD === "read") {
+  console.log("Reading Notes");
+} else if (usrCMD === "remove") {
+  console.log("Removing Notes");
+} else {
+  console.log("Command not recognized");
+}
 //const os = require('os');
 //var userName = os.userInfo();
 
@@ -17,16 +37,8 @@ console.log(array);
 var resultAddNotes = notes.addnote();
 console.log(resultAddNotes);
 var sumNumbers = notes.addNumber(10,500);
-console.log(sumNumbers);
+console.log(sumNumbers);w   
 
 
 console.log(userName);
-
-
-fs.appendFile('greetings.txt', `Hello ${userName.username} ! You are ${notes.age} !`, function(err){
-    if(err)
-    {
-        console.log('Unable to write to the file');
-    }
-    console.log('Successfully written file')
-}); */
+*/
