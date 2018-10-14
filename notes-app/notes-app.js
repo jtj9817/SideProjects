@@ -22,6 +22,12 @@ if (usrCMD === "add") {
 } else {
   console.log("Command not recognized");
 }
+<<<<<<< HEAD
+=======
+
+//The following code are past exercises
+/*
+>>>>>>> 72a23015a6bcfe71386a3425a8b3d40d4c0b46c7
 //const os = require('os');
 //var userName = os.userInfo();
 
