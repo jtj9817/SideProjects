@@ -22,12 +22,9 @@ if (usrCMD === "add") {
 } else {
   console.log("Command not recognized");
 }
-<<<<<<< HEAD
-=======
 
 //The following code are past exercises
 /*
->>>>>>> 72a23015a6bcfe71386a3425a8b3d40d4c0b46c7
 //const os = require('os');
 //var userName = os.userInfo();
 
@@ -38,13 +35,9 @@ console.log(lodsh.isString("The quick brown fox"));
 console.log(lodsh.isString("Hello world!"));
 var array = lodsh.uniq(['Josh', 1, 'Josh2', 1,2,3,4,5]);
 console.log(array);
-
-
 var resultAddNotes = notes.addnote();
 console.log(resultAddNotes);
 var sumNumbers = notes.addNumber(10,500);
-console.log(sumNumbers);w   
-
-
+console.log(sumNumbers);
 console.log(userName);
 */

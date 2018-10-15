@@ -16,6 +16,15 @@ module.exports.addNumber = (num1, num2) => {
   return "Result: " + sum;
 };
 
+var getNote = title => {
+  console.log("Getting note..", title);
+  console.log();
+};
+
+var getall = () => {
+  console.all("Retrieving all notes");
+};
+
 module.exports = {
   addNote
 };

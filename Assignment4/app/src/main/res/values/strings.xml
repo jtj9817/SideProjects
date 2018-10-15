@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Assignment4</string>
+    <string-array name="sports_categories">
+        <item>Baseball</item>
+        <item>Basketball</item>
+        <item>Football</item>
+        <item>Hockey</item>
+    </string-array>
+
+</resources>
