@@ -6,8 +6,8 @@ To run the program simply download the "Assignment4.apk" file and run it on your
 https://appetize.io/upload and follow the instructions on how to run it.
 # Screenshots
 ## App Overview Screen
-![](https://github.com/jtj9817/SideProjects/blob/master/Assignment6/Screenshots/App_Overview.png)
+![](https://github.com/jtj9817/SideProjects/blob/master/Assignment4/Screenshots/App_Overview.png)
 ### Add Team Metadata Screen
-![](https://github.com/jtj9817/SideProjects/blob/master/Assignment6/Screenshots/AddTeam_view.png)
+![](https://github.com/jtj9817/SideProjects/blob/master/Assignment4/Screenshots/AddTeam_view.png)
 ### Modify Team Metadata Screen
-![](https://github.com/jtj9817/SideProjects/blob/master/Assignment6/Screenshots/ModifyTeam_view.png)
+![](https://github.com/jtj9817/SideProjects/blob/master/Assignment4/Screenshots/ModifyTeam_view.png)
