@@ -21,10 +21,12 @@ var getNote = title => {
   console.log();
 };
 
-var getall = () => {
-  console.all("Retrieving all notes");
+var getAll = () => {
+  console.log("Retrieving all notes");
 };
 
 module.exports = {
-  addNote
+  addNote,
+  getAll,
+  getNote
 };

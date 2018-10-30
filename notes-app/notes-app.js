@@ -14,11 +14,14 @@ if (usrCMD === "add") {
   //console.log("Note Title: ", yrgsCMD.title, yrgsCMD.body);
   notes.addNote(yrgsCMD.title, yrgsCMD.body);
 } else if (usrCMD === "list") {
-  console.log("Listing Notes");
+  notes.getAll();
+  //console.log("Listing Notes");
 } else if (usrCMD === "read") {
-  console.log("Reading Notes");
+  notes.getNote(yrgsCMD.title);
+  //console.log("Reading Notes");
 } else if (usrCMD === "remove") {
-  console.log("Removing Notes");
+  notes.re
+  //console.log("Removing Notes");
 } else {
   console.log("Command not recognized");
 }
